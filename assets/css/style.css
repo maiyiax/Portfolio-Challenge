@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color: #524e4e;
+    --text-color: #282e78;
+    --header-background: #e1e2f1;
+}
+
+/* Header Styles */
+
+header {
+    padding: 20px 35px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    top: 0;
+}
+
+header h1 {
+    color: var(--text-color);
+    background-color: var(--header-background);
+    margin: 0;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+header a {
+    color: var(--header-background);
+}
+
+header nav {
+    margin: 7px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 10px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+}
+
+/* Header Styles End */
+
+/* Hero Styles */
+
+.hero {
+    background-image: url(../images/background.jpeg);
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10vw;
+}
