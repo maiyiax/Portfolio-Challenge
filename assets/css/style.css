@@ -2,11 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #918080;
+    color: #282e78;
 }
 
 :root {
-    --background-color: #524e4e;
-    --text-color: #282e78;
     --header-background: #e1e2f1;
 }
 
@@ -14,24 +14,17 @@
 
 header {
     padding: 20px 35px;
-    background-color: var(--background-color);
-    color: var(--text-color);
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     top: 0;
 }
 
 header h1 {
-    color: var(--text-color);
-    background-color: var(--header-background);
     margin: 0;
     font-size: 40px;
     font-weight: bold;
-}
-
-header a {
-    color: var(--header-background);
+    background-color: var(--header-background); 
+    width: 15vw;
 }
 
 header nav {
@@ -52,6 +45,10 @@ header nav ul li a {
     font-size: 1.55vw;
 }
 
+.header-background {-
+    background-color: var(--header-background);
+}
+
 /* Header Styles End */
 
 /* Hero Styles */
@@ -61,5 +58,95 @@ header nav ul li a {
     background-size: cover;
     display: flex;
     justify-content: flex-end;
-    padding: 10vw;
 }
+
+/* Hero Styles End */
+
+/* Body Elements */
+
+.section-title {
+    font-size: 32px;
+    border-right: 3px solid;
+}
+
+.section-title h2 {
+    word-wrap: break-word;
+    margin-left: 5vw;
+    text-align: right;
+    display: flex;
+}
+
+
+/* About Me Styles */
+
+.personal {-
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Work Styles */
+
+.project-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.project-name {
+    background-color: var(--header-background);
+}
+
+.project-name.project-1 {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.project-1 {
+    background-image: url(../images/run-buddy.jpeg);
+}
+
+.project-2 {
+    background-image: url(../images/image-a.jpeg);
+}
+
+.project-3 {
+    background-image: url(../images/image-b.jpeg);
+}
+
+.project-4 {
+    background-image: url(../images/image-c.jpeg)
+}
+
+.project-5 {
+    background-image: url(../images/image-d.jpeg);
+}
+
+/* Work Styles End */
+
+/* Contact Styles */
+
+.contacts {
+    display: flex;
+}
+
+ .contact-info {
+     padding: 20px;
+ }
+
+ .contact-info ul {
+     list-style: none;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+     column-gap: 40px;
+ }
+
+
